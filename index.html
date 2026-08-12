@@ -1,0 +1,2839 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div>
+        <video width="100%" height="100%" autoplay muted>
+            <source src="Intro Netflix.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+    </div>
+
+    <div id="intro-screen" class="screen active">
+        <h1 class="logo-animado">NETFLIX</h1>
+    </div>
+
+    <div id="profile-screen" class="screen hidden">
+        <h2>¿Quién está viendo ahora?</h2>
+
+        <div class="profiles-container">
+            <div class="profile" id="profile-active">
+                <img src="MiNiña.jpg" alt="Perfil 1">
+                <p>Tú</p>
+            </div>
+
+            <div class="profile profile-disabled">
+                <img src="Yo.jpg" alt="Perfil 2">
+                <p>Elisa</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-screen" class="screen hidden">
+
+        <nav class="navbar">
+            <div class="nav-left">
+
+                <h2 class="logo-small">NETFLIX</h2>
+
+                <ul class="nav-links">
+                    <li class="tab-btn active" data-target="inicio">Inicio</li>
+                    <li class="tab-btn" data-target="musica">Música</li>
+                    <li class="tab-btn" data-target="lista">Mi Lista</li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+        <!-- =========================
+             INICIO
+        ========================== -->
+
+        <div id="inicio" class="tab-content active-tab">
+
+            <div class="hero">
+
+                <div class="hero-content">
+
+                    <h1>Un poquito de nosotras</h1>
+
+                    <p>
+                        Adentrate en este año que hemos pasado juntas,
+                        podrás recordar un poco de todo lo que hemos pasado
+                        y aquellos grandes momentos que compartimos.
+                    </p>
+
+                    <button id="play-btn">▶ Reproducir</button>
+
+                </div>
+
+            </div>
+
+
+            <div class="episodes-section">
+
+                <h2 class="section-title">
+                    Episodios (Temporada 1)
+                </h2>
+
+                <div class="episodes-grid" id="episodes-container">
+                </div>
+
+            </div>
+
+
+            <div class="tbc-container">
+
+                <h2 class="tbc-text">
+                    PRÓXIMAMENTE: TEMPORADA 2...
+                    <span class="tbc-dot">.</span>
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             MÚSICA
+        ========================== -->
+
+        <div id="musica" class="tab-content hidden">
+
+            <h2 class="section-title">
+                Música y Conciertos
+            </h2>
+
+            <div class="container">
+
+
+                <!-- CANCIÓN 1 -->
+
+                <div class="player">
+
+                    <img src="portadas/portada1.jpg" class="cover">
+
+                    <div class="title">Eres tú</div>
+
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+                    <div class="time">
+                        <span class="current">0:00</span>
+                        <span class="duration">0:00</span>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn play">▶</button>
+                    </div>
+
+                    <audio src="canciones/Eres Tú    Indie  Rock.mp3"></audio>
+
+                </div>
+
+
+                <!-- CANCIÓN 2 -->
+
+                <div class="player">
+
+                    <img src="portadas/portada2.jpg" class="cover">
+
+                    <div class="title">Addicted to you</div>
+
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+                    <div class="time">
+                        <span class="current">0:00</span>
+                        <span class="duration">0:00</span>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn play">▶</button>
+                    </div>
+
+                    <audio src="canciones/Addicted To You.mp3"></audio>
+
+                </div>
+
+
+                <!-- CANCIÓN 3 -->
+
+                <div class="player">
+
+                    <img src="portadas/portada3.jpg" class="cover">
+
+                    <div class="title">Amor completo</div>
+
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+                    <div class="time">
+                        <span class="current">0:00</span>
+                        <span class="duration">0:00</span>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn play">▶</button>
+                    </div>
+
+                    <audio src="canciones/Amor Completo.mp3"></audio>
+
+                </div>
+
+
+                <!-- CANCIÓN 4 -->
+
+                <div class="player">
+
+                    <img src="portadas/portada4.jfif" class="cover">
+
+                    <div class="title">Besar</div>
+
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+                    <div class="time">
+                        <span class="current">0:00</span>
+                        <span class="duration">0:00</span>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn play">▶</button>
+                    </div>
+
+                    <audio src="canciones/Besar.mp3"></audio>
+
+                </div>
+
+
+                <!-- CANCIÓN 5 -->
+
+                <div class="player">
+
+                    <img src="portadas/portada5.jfif" class="cover">
+
+                    <div class="title">Enamorada</div>
+
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+                    <div class="time">
+                        <span class="current">0:00</span>
+                        <span class="duration">0:00</span>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn play">▶</button>
+                    </div>
+
+                    <audio src="canciones/Enamorada.mp3"></audio>
+
+                </div>
+
+
+                <!-- CANCIÓN 6 -->
+
+                <div class="player">
+
+                    <img src="portadas/portada6.jfif" class="cover">
+
+                    <div class="title">Can't take my eyes off you</div>
+
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+                    <div class="time">
+                        <span class="current">0:00</span>
+                        <span class="duration">0:00</span>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn play">▶</button>
+                    </div>
+
+                    <audio src="canciones/Can't take my eyes off you (lyrics).mp3"></audio>
+
+                </div>
+
+
+                <!-- CANCIÓN 7 -->
+
+                <div class="player">
+
+                    <img src="portadas/portada7.jpg" class="cover">
+
+                    <div class="title">Magia</div>
+
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+                    <div class="time">
+                        <span class="current">0:00</span>
+                        <span class="duration">0:00</span>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn play">▶</button>
+                    </div>
+
+                    <audio src="canciones/Magia.mp3"></audio>
+
+                </div>
+
+
+                <!-- CANCIÓN 8 -->
+
+                <div class="player">
+
+                    <img src="portadas/portada8.jfif" class="cover">
+
+                    <div class="title">Can't help falling in love</div>
+
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+                    <div class="time">
+                        <span class="current">0:00</span>
+                        <span class="duration">0:00</span>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn play">▶</button>
+                    </div>
+
+                    <audio src="canciones/Can't Help Falling In Love.mp3"></audio>
+
+                </div>
+
+
+                <!-- CANCIÓN 9 -->
+
+                <div class="player">
+
+                    <img src="portadas/portada9.jfif" class="cover">
+
+                    <div class="title">Tu sí sabes quererme</div>
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+                    <div class="time">
+                        <span class="current">0:00</span>
+                        <span class="duration">0:00</span>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn play">▶</button>
+                    </div>
+
+                    <audio src="canciones/Tú Sí Sabes Quererme.mp3"></audio>
+
+                </div>
+
+
+                <!-- CANCIÓN 10 -->
+
+                <div class="player">
+
+                    <img src="portadas/portada10.jpg" class="cover">
+
+                    <div class="title">I was made for lovin' you</div>
+
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+                    <div class="time">
+                        <span class="current">0:00</span>
+                        <span class="duration">0:00</span>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn play">▶</button>
+                    </div>
+
+                    <audio src="canciones/I Was Made For Lovin' You.mp3"></audio>
+
+                </div>
+
+
+                <!-- CANCIÓN 11 -->
+
+                <div class="player">
+
+                    <img src="portadas/portada11.jpg" class="cover">
+
+                    <div class="title">I was born to love you</div>
+
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+                    <div class="time">
+                        <span class="current">0:00</span>
+                        <span class="duration">0:00</span>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn play">▶</button>
+                    </div>
+
+                    <audio src="canciones/I Was Born To Love You.mp3"></audio>
+
+                </div>
+
+
+                <!-- CANCIÓN 12 -->
+
+                <div class="player">
+
+                    <img src="portadas/portada12.png" class="cover">
+
+                    <div class="title">Compartir</div>
+
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+                    <div class="time">
+                        <span class="current">0:00</span>
+                        <span class="duration">0:00</span>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn play">▶</button>
+                    </div>
+
+                    <audio src="canciones/Compartir.mp3"></audio>
+
+                </div>
+
+
+                <!-- CANCIÓN 13 -->
+
+                <div class="player">
+
+                    <img src="portadas/portada13.jfif" class="cover">
+
+                    <div class="title">Stand by me</div>
+
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+                    <div class="time">
+                        <span class="current">0:00</span>
+                        <span class="duration">0:00</span>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn play">▶</button>
+                    </div>
+
+                    <audio src="canciones/Stand By Me.mp3"></audio>
+
+                </div>
+
+
+                <!-- CANCIÓN 14 -->
+
+                <div class="player">
+
+                    <img src="portadas/portada14.jfif" class="cover">
+
+                    <div class="title">Happy Together</div>
+
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+                    <div class="time">
+                        <span class="current">0:00</span>
+                        <span class="duration">0:00</span>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn play">▶</button>
+                    </div>
+
+                    <audio src="canciones/Happy together.mp3"></audio>
+
+                </div>
+
+
+                <!-- CANCIÓN 15 -->
+
+                <div class="player">
+
+                    <img src="portadas/portada15.jfif" class="cover">
+
+                    <div class="title">Only you</div>
+
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+                    <div class="time">
+                        <span class="current">0:00</span>
+                        <span class="duration">0:00</span>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn play">▶</button>
+                    </div>
+
+                    <audio src="canciones/Only You.mp3"></audio>
+
+                </div>
+
+
+                <!-- CANCIÓN 16 -->
+
+                <div class="player">
+
+                    <img src="portadas/portada16.jpg" class="cover">
+
+                    <div class="title">Can't Get You Out Of My Head</div>
+
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+                    <div class="time">
+                        <span class="current">0:00</span>
+                        <span class="duration">0:00</span>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn play">▶</button>
+                    </div>
+
+                    <audio src="canciones/Can't Get You Out Of My Head.mp3"></audio>
+
+                </div>
+
+
+                <!-- CANCIÓN 17 -->
+
+                <div class="player">
+
+                    <img src="portadas/portada17.jfif" class="cover">
+
+                    <div class="title">Love always comes as a surprise</div>
+
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+                    <div class="time">
+                        <span class="current">0:00</span>
+                        <span class="duration">0:00</span>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn play">▶</button>
+                    </div>
+
+                    <audio src="canciones/Love Always Comes As A Surprise.mp3"></audio>
+
+                </div>
+
+
+                <!-- CANCIÓN 18 -->
+
+                <div class="player">
+
+                    <img src="portadas/portada18.jfif" class="cover">
+
+                    <div class="title">Risk it all</div>
+
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+                    <div class="time">
+                        <span class="current">0:00</span>
+                        <span class="duration">0:00</span>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn play">▶</button>
+                    </div>
+
+                    <audio src="canciones/Risk It All.mp3"></audio>
+
+                </div>
+
+
+                <!-- CANCIÓN 19 -->
+
+                <div class="player">
+
+                    <img src="portadas/portada19.jfif" class="cover">
+
+                    <div class="title">Contigo</div>
+
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+                    <div class="time">
+                        <span class="current">0:00</span>
+                        <span class="duration">0:00</span>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn play">▶</button>
+                    </div>
+
+                    <audio src="canciones/Contigo.mp3"></audio>
+
+                </div>
+
+
+                <!-- CANCIÓN 20 -->
+
+                <div class="player">
+
+                    <img src="portadas/portada20.jpg" class="cover">
+
+                    <div class="title">Backyardigans</div>
+
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+                    <div class="time">
+                        <span class="current">0:00</span>
+                        <span class="duration">0:00</span>
+                    </div>
+
+                    <div class="controls">
+                        <button class="btn play">▶</button>
+                    </div>
+
+                    <audio src="canciones/backyardigans.ogg"></audio>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             MI LISTA
+        ========================== -->
+
+        <div id="lista" class="tab-content hidden">
+
+            <h2 class="section-title">
+                50 motivos por los que te amo
+            </h2>
+
+            <div class="detailed-list-container" id="my-list-container">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         MODAL VIDEO PRINCIPAL
+    ========================== -->
+
+    <div id="video-modal" class="modal-overlay hidden">
+
+        <div class="modal-content video-content">
+
+            <button class="close-modal-btn" id="close-video-btn">
+                X Cerrar
+            </button>
+
+            <iframe
+                id="youtube-player"
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/LXb3EKWsInQ?enablejsapi=1"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         MODAL CARRETE DE FOTOS
+    ========================== -->
+
+    <div id="episode-detail-modal" class="modal-overlay hidden">
+
+        <div class="modal-content detail-content">
+
+            <button class="close-modal-btn" id="close-detail-btn">
+                X
+            </button>
+
+            <div class="photo-reel">
+
+                <button class="reel-arrow reel-prev" id="prev-photo">
+                    ‹
+                </button>
+
+                <img id="detail-episode-img"
+                     src=""
+                     alt="Foto del episodio">
+
+                <button class="reel-arrow reel-next" id="next-photo">
+                    ›
+                </button>
+
+            </div>
+
+            <div class="detail-text-info">
+
+                <h2 id="detail-episode-title"></h2>
+
+                <p class="detail-duration"
+                   id="detail-episode-duration">
+                </p>
+
+                <p class="detail-description"
+                   id="detail-episode-description">
+                </p>
+
+                <div class="photo-counter"
+                     id="photo-counter">
+                    1 / 4
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+<style>
+
+/* =========================
+   RESETEO
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   PANTALLAS
+========================= */
+
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: opacity 0.5s ease;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.active {
+    opacity: 1;
+    z-index: 10;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    padding: 20px 40px;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.8) 10%,
+        rgba(0,0,0,0)
+    );
+
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo-small {
+    color: #e50914;
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    cursor: pointer;
+    color: #e5e5e5;
+    transition: color 0.3s;
+}
+
+.nav-links li:hover,
+.nav-links li.active {
+    color: white;
+    font-weight: bold;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+#intro-screen {
+    background-color: black;
+}
+
+.logo-animado {
+    color: #e50914;
+    font-size: 5rem;
+    letter-spacing: 5px;
+    animation: zoomIn 2.5s ease forwards;
+}
+
+@keyframes zoomIn {
+
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
+
+/* =========================
+   PERFILES
+========================= */
+
+.profiles-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.profile {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.profile:hover {
+    transform: scale(1.1);
+}
+
+.profile img {
+    width: 120px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+.profile:hover img {
+    border-color: white;
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+#main-screen {
+    justify-content: flex-start;
+}
+
+.tab-content {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 80px;
+    display: none;
+}
+
+.active-tab {
+    display: block;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    height: 75vh;
+
+    background: url('baile.png')
+        center/cover
+        no-repeat;
+
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 50%;
+
+    background: linear-gradient(
+        to top,
+        #141414,
+        transparent
+    );
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 20%;
+    left: 50px;
+
+    z-index: 2;
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px black;
+}
+
+#play-btn {
+    padding: 10px 25px;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 4px;
+
+    background-color: white;
+    color: black;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   TÍTULOS
+========================= */
+
+.section-title {
+    margin: 20px 50px;
+    font-size: 1.5rem;
+    color: #e5e5e5;
+}
+
+
+/* =========================
+   EPISODIOS
+========================= */
+
+.episodes-section {
+    padding: 20px 50px 40px;
+}
+
+.episodes-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fill, minmax(280px, 1fr));
+
+    gap: 25px;
+
+    margin-top: 20px;
+}
+
+.episode-card {
+
+    background-color: #181818;
+
+    border-radius: 4px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s,
+        background-color 0.3s;
+
+    position: relative;
+
+    box-shadow:
+        0 4px 6px rgba(0,0,0,0.3);
+}
+
+.episode-card:hover {
+
+    transform: scale(1.03);
+
+    background-color: #232323;
+}
+
+.episode-thumbnail-wrapper {
+
+    width: 100%;
+    height: 160px;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.episode-thumbnail-wrapper img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s;
+}
+
+.episode-card:hover
+.episode-thumbnail-wrapper img {
+
+    transform: scale(1.1);
+}
+
+.play-hover-overlay {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.5);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+
+    transition: opacity 0.3s;
+
+    font-size: 3rem;
+
+    color: white;
+}
+
+.episode-card:hover
+.play-hover-overlay {
+
+    opacity: 1;
+}
+
+.episode-info {
+    padding: 15px;
+}
+
+.episode-info h3 {
+
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.episode-info p {
+
+    font-size: 0.85rem;
+    color: #aaaaaa;
+}
+
+
+/* =========================
+   CONTINUARÁ
+========================= */
+
+.tbc-container {
+
+    padding: 60px 0;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #141414,
+            #000
+        );
+}
+
+.tbc-text {
+
+    font-size: 2rem;
+
+    color: #e50914;
+
+    text-transform: uppercase;
+
+    letter-spacing: 4px;
+
+    font-style: italic;
+
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0% {
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 15px #e50914;
+    }
+
+    100% {
+        opacity: 0.6;
+    }
+
+}
+
+
+/* =========================
+   MI LISTA
+========================= */
+
+.detailed-list-container {
+
+    padding: 20px 50px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    max-width: 1000px;
+}
+
+.list-item {
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: #181818;
+
+    border-radius: 4px;
+
+    overflow: hidden;
+
+    transition:
+        background-color 0.3s;
+
+    cursor: pointer;
+}
+
+.list-item:hover {
+    background-color: #232323;
+}
+
+.list-item-img {
+
+    width: 150px;
+    height: 85px;
+
+    min-width: 150px;
+
+    overflow: hidden;
+}
+
+.list-item-img img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.list-item-text {
+
+    padding: 10px 20px;
+
+    flex-grow: 1;
+}
+
+.list-item-text h3 {
+
+    font-size: 1.1rem;
+
+    color: white;
+
+    margin-bottom: 5px;
+}
+
+.list-item-text p {
+
+    font-size: 0.9rem;
+
+    color: #aaaaaa;
+}
+
+
+/* =========================
+   MODALES
+========================= */
+
+.modal-overlay {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color:
+        rgba(0,0,0,0.85);
+
+    z-index: 200;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+
+    transition: opacity 0.3s;
+
+    pointer-events: none;
+}
+
+.modal-overlay.active-modal {
+
+    opacity: 1;
+
+    pointer-events: auto;
+}
+
+.modal-content {
+
+    background-color: #181818;
+
+    border-radius: 8px;
+
+    position: relative;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.5);
+
+    overflow: hidden;
+}
+
+.close-modal-btn {
+
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    background:
+        rgba(0,0,0,0.7);
+
+    color: white;
+
+    border: none;
+
+    font-size: 1rem;
+
+    padding: 8px 12px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    z-index: 10;
+}
+
+
+/* =========================
+   VIDEO
+========================= */
+
+.video-content {
+
+    width: 85%;
+    height: 85%;
+}
+
+
+/* =========================
+   CARRETE DE FOTOS
+========================= */
+
+.detail-content {
+
+    width: 700px;
+
+    max-width: 90%;
+
+    padding-bottom: 20px;
+}
+
+.photo-reel {
+
+    width: 100%;
+
+    height: 400px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: black;
+}
+
+#detail-episode-img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+.reel-arrow {
+
+    position: absolute;
+
+    z-index: 5;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:
+        rgba(0,0,0,0.65);
+
+    color: white;
+
+    font-size: 35px;
+
+    cursor: pointer;
+}
+
+.reel-prev {
+    left: 15px;
+}
+
+.reel-next {
+    right: 15px;
+}
+
+.detail-text-info {
+
+    padding: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+#detail-episode-title {
+
+    font-size: 1.8rem;
+}
+
+.detail-duration {
+
+    color: #aaaaaa;
+
+    font-weight: bold;
+}
+
+.detail-description {
+
+    color: #e5e5e5;
+
+    font-size: 0.95rem;
+
+    line-height: 1.5;
+}
+
+.photo-counter {
+
+    text-align: center;
+
+    color: #aaa;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================
+   MÚSICA
+========================= */
+
+.container {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 20px 50px 50px;
+}
+
+.player {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    background: #181818;
+
+    border-radius: 20px;
+
+    padding: 15px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.6);
+
+    text-align: center;
+
+    color: white;
+}
+
+.cover {
+
+    width: 100%;
+
+    border-radius: 15px;
+}
+
+.title {
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+.artist {
+
+    font-size: 13px;
+
+    color: #aaa;
+}
+
+.progress-container {
+
+    width: 100%;
+
+    height: 5px;
+
+    background: #333;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    margin: 10px 0;
+}
+
+.progress {
+
+    height: 100%;
+
+    width: 0%;
+
+    background: #ff0000;
+
+    border-radius: 5px;
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+.btn {
+
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+.time {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 11px;
+
+    color: #aaa;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+
+        padding: 15px;
+
+    }
+
+    .nav-left {
+
+        gap: 15px;
+
+        justify-content: center;
+
+        width: 100%;
+    }
+
+    .logo-small {
+
+        font-size: 1.3rem;
+    }
+
+    .nav-links {
+
+        gap: 12px;
+
+        font-size: 0.85rem;
+    }
+
+
+    .hero {
+
+        height: 70vh;
+    }
+
+    .hero-content {
+
+        left: 20px;
+
+        right: 20px;
+
+        bottom: 12%;
+
+        max-width: none;
+    }
+
+    .hero-content h1 {
+
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+
+        font-size: 0.95rem;
+
+        line-height: 1.4;
+    }
+
+    #play-btn {
+
+        font-size: 1rem;
+
+        padding: 9px 18px;
+    }
+
+
+    .section-title {
+
+        margin: 20px;
+
+        font-size: 1.25rem;
+    }
+
+
+    .episodes-section {
+
+        padding: 15px 20px 30px;
+    }
+
+    .episodes-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .episode-thumbnail-wrapper {
+
+        height: 190px;
+    }
+
+
+    .tbc-text {
+
+        font-size: 1.1rem;
+
+        padding: 0 20px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .container {
+
+        padding: 10px 20px 40px;
+
+        gap: 25px;
+    }
+
+    .player {
+
+        max-width: 100%;
+
+        border-radius: 15px;
+    }
+
+
+    .detailed-list-container {
+
+        padding: 10px 20px 40px;
+
+        gap: 12px;
+    }
+
+    .list-item {
+
+        align-items: flex-start;
+    }
+
+    .list-item-img {
+
+        width: 90px;
+
+        min-width: 90px;
+
+        height: 90px;
+    }
+
+    .list-item-text {
+
+        padding: 10px;
+    }
+
+    .list-item-text h3 {
+
+        font-size: 0.95rem;
+    }
+
+    .list-item-text p {
+
+        font-size: 0.8rem;
+
+        line-height: 1.35;
+    }
+
+
+    .detail-content {
+
+        width: 95%;
+
+        max-width: 95%;
+    }
+
+    .photo-reel {
+
+        height: 300px;
+    }
+
+    .detail-text-info {
+
+        padding: 15px;
+    }
+
+    #detail-episode-title {
+
+        font-size: 1.4rem;
+    }
+
+
+    .video-content {
+
+        width: 95%;
+
+        height: 40%;
+    }
+
+}
+
+
+/* =========================
+   CELULARES MUY PEQUEÑOS
+========================= */
+
+@media (max-width: 380px) {
+
+    .logo-small {
+
+        display: none;
+    }
+
+    .nav-links {
+
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+
+        font-size: 1.7rem;
+    }
+
+    .hero-content p {
+
+        font-size: 0.85rem;
+    }
+
+    .episode-thumbnail-wrapper {
+
+        height: 170px;
+    }
+
+}
+
+</style>
+
+
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+
+
+    /* =====================================================
+       PANTALLAS INICIALES
+    ===================================================== */
+
+    const introScreen =
+        document.getElementById('intro-screen');
+
+    const profileScreen =
+        document.getElementById('profile-screen');
+
+    const mainScreen =
+        document.getElementById('main-screen');
+
+    const videoModal =
+        document.getElementById('video-modal');
+
+    const youtubePlayer =
+        document.getElementById('youtube-player');
+
+
+    setTimeout(() => {
+
+        introScreen.classList.remove('active');
+        introScreen.classList.add('hidden');
+
+        profileScreen.classList.remove('hidden');
+        profileScreen.classList.add('active');
+
+    }, 2500);
+
+
+    const activeProfile =
+        document.getElementById('profile-active');
+
+
+    activeProfile.addEventListener('click', () => {
+
+        profileScreen.classList.remove('active');
+        profileScreen.classList.add('hidden');
+
+        mainScreen.classList.remove('hidden');
+        mainScreen.classList.add('active');
+
+    });
+
+
+    /* =====================================================
+       NAVEGACIÓN
+    ===================================================== */
+
+    const tabBtns =
+        document.querySelectorAll('.tab-btn');
+
+    const tabContents =
+        document.querySelectorAll('.tab-content');
+
+
+    tabBtns.forEach(btn => {
+
+        btn.addEventListener('click', () => {
+
+            tabBtns.forEach(b =>
+                b.classList.remove('active')
+            );
+
+            tabContents.forEach(c => {
+
+                c.classList.remove('active-tab');
+                c.classList.add('hidden');
+
+            });
+
+
+            btn.classList.add('active');
+
+            const targetId =
+                btn.getAttribute('data-target');
+
+            document
+                .getElementById(targetId)
+                .classList.remove('hidden');
+
+            document
+                .getElementById(targetId)
+                .classList.add('active-tab');
+
+        });
+
+    });
+
+
+    /* =====================================================
+       MODALES
+    ===================================================== */
+
+    function openModal(modal) {
+
+        modal.classList.add('active-modal');
+
+    }
+
+
+    function closeModal(modal) {
+
+        modal.classList.remove('active-modal');
+
+    }
+
+
+    /* =====================================================
+       VIDEO PRINCIPAL
+    ===================================================== */
+
+    const playHeroBtn =
+        document.getElementById('play-btn');
+
+    const closeVideoBtn =
+        document.getElementById('close-video-btn');
+
+
+    playHeroBtn.addEventListener('click', () => {
+
+        openModal(videoModal);
+
+        let url = youtubePlayer.src;
+
+        if (!url.includes('autoplay=1')) {
+
+            youtubePlayer.src =
+                url + "&autoplay=1";
+
+        }
+
+    });
+
+
+    closeVideoBtn.addEventListener('click', () => {
+
+        closeModal(videoModal);
+
+        let url = youtubePlayer.src;
+
+        youtubePlayer.src =
+            url.replace('&autoplay=1', '');
+
+    });
+
+
+    /* =====================================================
+       12 EPISODIOS
+    ===================================================== */
+
+    const episodesData = [
+
+        {
+            id: 1,
+            title: "El comienzo",
+            duration: "Episodio 1",
+            img: "Nosotras/01-1.jpg",
+            photos: [
+                "Nosotras/01-1.jpg",
+                "Nosotras/01-2.jpg",
+                "Nosotras/01-3.jpeg",
+                "Nosotras/01-4.jpg"
+            ],
+            desc: "El inicio de nuestra historia y todos esos pequeños momentos que hicieron que comenzáramos a construir algo juntas."
+        },
+
+        {
+            id: 2,
+            title: "Nuestros primeros momentos",
+            duration: "Episodio 2",
+            img: "Nosotras/02-1.jpg",
+            photos: [
+                "Nosotras/02-1.jpg",
+                "Nosotras/02-2.jpg",
+                "Nosotras/02-3.jpeg",
+                "Nosotras/02-4.jpg"
+            ],
+            desc: "Recuerdos de aquellos primeros días en los que comenzamos a conocernos cada vez más."
+        },
+
+        {
+            id: 3,
+            title: "Contigo",
+            duration: "Episodio 3",
+            img: "Nosotras/03-1.jpg",
+            photos: [
+                "Nosotras/03-1.jpg",
+                "Nosotras/03-2.jpg",
+                "Nosotras/03-3.jpg",
+                "Nosotras/03-4.jpg"
+            ],
+            desc: "Porque cualquier momento se vuelve especial cuando estoy contigo."
+        },
+
+        {
+            id: 4,
+            title: "Nuestras aventuras",
+            duration: "Episodio 4",
+            img: "Nosotras/04-1.jpg",
+            photos: [
+                "Nosotras/04-1.jpg",
+                "Nosotras/04-2.jpeg",
+                "Nosotras/04-3.jpeg",
+                "Nosotras/04-4.jpeg"
+            ],
+            desc: "Todas esas aventuras, salidas y momentos que hemos compartido son inolvidables."
+        },
+
+        {
+            id: 5,
+            title: "Fiestas",
+            duration: "Episodio 5",
+            img: "Nosotras/05-1.jpg",
+            photos: [
+                "Nosotras/05-1.jpg",
+                "Nosotras/05-2.jpg",
+                "Nosotras/05-3.jpg",
+                "Nosotras/05-4.jpg"
+            ],
+            desc: "Porque todas las fiestas se convierten en recuerdos increíbles cuando los paso contigo."
+        },
+
+        {
+            id: 6,
+            title: "Familia",
+            duration: "Episodio 6",
+            img: "Nosotras/06-1.jpg",
+            photos: [
+                "Nosotras/06-1.jpg",
+                "Nosotras/06-2.jpg",
+                "Nosotras/06-3.jpg",
+                "Nosotras/06-4.jpg"
+            ],
+            desc: "Todas esas veces que me has ayudado a afrontar mis miedos"
+        },
+
+        {
+            id: 7,
+            title: "Distancia",
+            duration: "Episodio 7",
+            img: "Nosotras/07-1.png",
+            photos: [
+                "Nosotras/07-1.png",
+                "Nosotras/07-2.jpg",
+                "Nosotras/07-3.jpeg",
+                "Nosotras/07-4.jpeg"
+            ],
+            desc: "Porque seguimos amandonos con firmeza a pesar de no poder vernos diario"
+        },
+
+        {
+            id: 8,
+            title: "Juntas",
+            duration: "Episodio 8",
+            img: "Nosotras/08-1.jpg",
+            photos: [
+                "Nosotras/08-1.jpg",
+                "Nosotras/08-2.jpg",
+                "Nosotras/08-3.jpg",
+                "Nosotras/08-4.jpeg"
+            ],
+            desc: "Porque cada día que pasamos juntas se convierte en una parte más de nuestra historia."
+        },
+
+        {
+            id: 9,
+            title: "Nuestro mundo",
+            duration: "Episodio 9",
+            img: "Nosotras/09-1.png",
+            photos: [
+                "Nosotras/09-1.png",
+                "Nosotras/09-2.jpeg",
+                "Nosotras/09-3.jpeg",
+                "Nosotras/09-4.jpeg"
+            ],
+            desc: "Ese pequeño mundo que hemos creado entre las dos."
+        },
+
+        {
+            id: 10,
+            title: "Resiliencia",
+            duration: "Episodio 10",
+            img: "Nosotras/10-1.jpeg",
+            photos: [
+                "Nosotras/10-1.jpeg",
+                "Nosotras/10-2.jpeg",
+                "Nosotras/10-3.jpeg",
+                "Nosotras/10-4.jpeg"
+            ],
+            desc: "Un mes donde nuestra fuerza y amor se mostraron más que nunca, y jamás soltamos nuestras manos."
+        },
+
+        {
+            id: 11,
+            title: "Todo lo que falta",
+            duration: "Episodio 11",
+            img: "Nosotras/11-1.jpg",
+            photos: [
+                "Nosotras/11-1.jpg",
+                "Nosotras/11-2.jpg",
+                "Nosotras/11-3.jpg",
+                "Nosotras/11-4.jpg"
+            ],
+            desc: "Esta historia todavía tiene muchísimas páginas por escribir."
+        },
+
+        {
+            id: 12,
+            title: "Continuará...",
+            duration: "Episodio 12",
+            img: "Nosotras/12-1.jpeg",
+            photos: [
+                "Nosotras/12-1.jpeg",
+                "Nosotras/12-2.jpeg",
+                "Nosotras/12-3.jpeg",
+                "Nosotras/12-4.jpeg"
+            ],
+            desc: "Porque nuestra historia no termina aquí. Esto solamente es el comienzo de todo lo que todavía nos queda por vivir."
+        }
+
+    ];
+
+
+    /* =====================================================
+       GENERAR EPISODIOS
+    ===================================================== */
+
+    const episodesContainer =
+        document.getElementById('episodes-container');
+
+
+    episodesData.forEach(ep => {
+
+        const card =
+            document.createElement('div');
+
+        card.className =
+            'episode-card';
+
+        card.setAttribute(
+            'data-id',
+            ep.id
+        );
+
+
+        card.innerHTML = `
+
+            <div class="episode-thumbnail-wrapper">
+
+                <img
+                    src="${ep.img}"
+                    alt="${ep.title}"
+                >
+
+                <div class="play-hover-overlay">
+                    ▶
+                </div>
+
+            </div>
+
+            <div class="episode-info">
+
+                <h3>
+                    ${ep.title}
+                </h3>
+
+                <p>
+                    ${ep.duration}
+                </p>
+
+            </div>
+
+        `;
+
+
+        episodesContainer.appendChild(card);
+
+    });
+
+
+    /* =====================================================
+       CARRETE DE FOTOS
+    ===================================================== */
+
+    const detailModal =
+        document.getElementById(
+            'episode-detail-modal'
+        );
+
+    const closeDetailBtn =
+        document.getElementById(
+            'close-detail-btn'
+        );
+
+    const detailImg =
+        document.getElementById(
+            'detail-episode-img'
+        );
+
+    const detailTitle =
+        document.getElementById(
+            'detail-episode-title'
+        );
+
+    const detailDuration =
+        document.getElementById(
+            'detail-episode-duration'
+        );
+
+    const detailDescription =
+        document.getElementById(
+            'detail-episode-description'
+        );
+
+    const prevPhoto =
+        document.getElementById(
+            'prev-photo'
+        );
+
+    const nextPhoto =
+        document.getElementById(
+            'next-photo'
+        );
+
+    const photoCounter =
+        document.getElementById(
+            'photo-counter'
+        );
+
+
+    let currentEpisode = null;
+
+    let currentPhoto = 0;
+
+
+    function updatePhoto() {
+
+        if (!currentEpisode) return;
+
+
+        detailImg.src =
+            currentEpisode.photos[currentPhoto];
+
+
+        photoCounter.textContent =
+            `${currentPhoto + 1} / ${currentEpisode.photos.length}`;
+
+    }
+
+
+    function showEpisodeDetails(episodeId) {
+
+        const episode =
+            episodesData.find(
+                ep => ep.id == episodeId
+            );
+
+
+        if (!episode) return;
+
+
+        currentEpisode = episode;
+
+        currentPhoto = 0;
+
+
+        detailTitle.textContent =
+            episode.title;
+
+        detailDuration.textContent =
+            episode.duration;
+
+        detailDescription.textContent =
+            episode.desc;
+
+
+        updatePhoto();
+
+
+        openModal(detailModal);
+
+    }
+
+
+    const episodeCards =
+        document.querySelectorAll(
+            '.episode-card'
+        );
+
+
+    episodeCards.forEach(card => {
+
+        card.addEventListener(
+            'click',
+            () => {
+
+                const epId =
+                    card.getAttribute(
+                        'data-id'
+                    );
+
+                showEpisodeDetails(epId);
+
+            }
+        );
+
+    });
+
+
+    prevPhoto.addEventListener(
+        'click',
+        () => {
+
+            if (!currentEpisode) return;
+
+
+            currentPhoto--;
+
+            if (currentPhoto < 0) {
+
+                currentPhoto =
+                    currentEpisode.photos.length - 1;
+
+            }
+
+
+            updatePhoto();
+
+        }
+    );
+
+
+    nextPhoto.addEventListener(
+        'click',
+        () => {
+
+            if (!currentEpisode) return;
+
+
+            currentPhoto++;
+
+            if (
+                currentPhoto >=
+                currentEpisode.photos.length
+            ) {
+
+                currentPhoto = 0;
+
+            }
+
+
+            updatePhoto();
+
+        }
+    );
+
+
+    closeDetailBtn.addEventListener(
+        'click',
+        () => {
+
+            closeModal(detailModal);
+
+        }
+    );
+
+
+    /* =====================================================
+       50 MOTIVOS POR LOS QUE LA AMO
+    ===================================================== */
+
+    const myListData = [
+
+        "Porque haces que mis días sean mucho más bonitos.",
+
+        "Porque tu sonrisa cambia completamente mi día.",
+
+        "Porque contigo puedo ser yo misma.",
+
+        "Porque me haces sentir amada.",
+
+        "Porque siempre encuentro una razón para sonreír cuando estoy contigo.",
+
+        "Porque tus abrazos hacen que todo se sienta mejor.",
+
+        "Porque me encanta la forma en la que me miras.",
+
+        "Porque eres una de las personas más importantes de mi vida.",
+
+        "Porque contigo puedo hablar de cualquier cosa.",
+
+        "Porque me haces sentir acompañada incluso cuando estamos lejos.",
+
+        "Porque los recuerdos contigo son los que más atesoro.",
+
+        "Porque me encanta reír contigo.",
+
+        "Porque siempre una dice un comentario más funable que la otra.",
+
+        "Porque sabes cómo hacerme sentir especial.",
+
+        "Porque contigo todos los días se vuelven especiales.",
+
+        "Porque me encanta compartir mi vida contigo.",
+
+        "Porque eres mi persona favorita.",
+
+        "Porque me haces sentir segura.",
+
+        "Porque puedo confiar en ti.",
+
+        "Porque siempre encuentro algo nuevo que amar de ti.",
+
+        "Porque me encanta escucharte hablar.",
+
+        "Porque me gusta conocer cada pequeño detalle de ti.",
+
+        "Porque haces que quiera ser una mejor persona.",
+
+        "Porque me inspiras.",
+
+        "Porque te admiro mucho.",
+
+        "Porque tu felicidad también me hace feliz.",
+
+        "Porque me encanta verte emocionarte por las cosas que te gustan.",
+
+        "Porque nuestras conversaciones pueden durar horas.",
+
+        "Porque me encanta hacer planes contigo.",
+
+        "Porque contigo puedo imaginar un futuro bonito.",
+
+        "Porque cada segundo contigo tiene un lugar especial en mi corazón.",
+
+        "Porque me encanta cuando nos reímos de cosas que solamente nosotras entendemos.",
+
+        "Porque haces que incluso los momentos pequeños tengan significado.",
+
+        "Porque me encanta estar cerca de ti.",
+
+        "Porque tus brazos son mi lugar favorito.",
+
+        "Porque me haces sentir que pertenezco.",
+
+        "Porque contigo he aprendido a vivir.",
+
+        "Porque me encanta la historia que estamos formando.",
+
+        "Porque quiero seguir creando recuerdos contigo.",
+
+        "Porque me gusta cómo eres.",
+
+        "Porque eres capaz de hacerme sonreír sin siquiera intentarlo.",
+
+        "Porque me encanta descubrir nuevas cosas contigo.",
+
+        "Porque me ayudas a afrontar mis miedos.",
+
+        "Porque me encanta nuestra complicidad.",
+
+        "Porque siempre hay algo que aprender de ti.",
+
+        "Porque me haces sentir afortunada.",
+
+        "Porque este año contigo han dejado muchísimos recuerdos hermosos.",
+
+        "Porque eres perfecta, mi hogar, mi lugar seguro, mi todo.",
+
+        "Porque nuestra historia apenas está comenzando.",
+
+        "Y porque simplemente eres tú, y eso es una de las razones más grandes para amarte."
+
+    ];
+
+
+    const listContainer =
+        document.getElementById(
+            'my-list-container'
+        );
+
+
+    myListData.forEach(
+        (reason, index) => {
+
+            const listItem =
+                document.createElement('div');
+
+            listItem.className =
+                'list-item';
+
+
+            listItem.innerHTML = `
+
+                <div class="list-item-img">
+
+                    <img
+                        src="https://picsum.photos/300?${index + 100}"
+                        alt="Motivo ${index + 1}"
+                    >
+
+                </div>
+
+                <div class="list-item-text">
+
+                    <h3>
+                        ${index + 1}. Motivo ${index + 1}
+                    </h3>
+
+                    <p>
+                        ${reason}
+                    </p>
+
+                </div>
+
+            `;
+
+
+            listContainer.appendChild(
+                listItem
+            );
+
+        }
+    );
+
+
+    /* =====================================================
+       CERRAR MODALES
+    ===================================================== */
+
+    window.addEventListener(
+        'click',
+        (e) => {
+
+            if (e.target === videoModal) {
+
+                closeModal(videoModal);
+
+                let url =
+                    youtubePlayer.src;
+
+                youtubePlayer.src =
+                    url.replace(
+                        '&autoplay=1',
+                        ''
+                    );
+
+            }
+
+
+            if (e.target === detailModal) {
+
+                closeModal(
+                    detailModal
+                );
+
+            }
+
+        }
+    );
+
+
+    /* =====================================================
+       MÚSICA
+       SOLO UNA CANCIÓN A LA VEZ
+    ===================================================== */
+
+    const players =
+        document.querySelectorAll(
+            '.player'
+        );
+
+
+    players.forEach(player => {
+
+        const audio =
+            player.querySelector(
+                'audio'
+            );
+
+        const playBtn =
+            player.querySelector(
+                '.play'
+            );
+
+        const progress =
+            player.querySelector(
+                '.progress'
+            );
+
+        const container =
+            player.querySelector(
+                '.progress-container'
+            );
+
+        const current =
+            player.querySelector(
+                '.current'
+            );
+
+        const duration =
+            player.querySelector(
+                '.duration'
+            );
+
+
+        let isPlaying = false;
+
+
+        playBtn.addEventListener(
+            'click',
+            () => {
+
+
+                /* Pausar TODAS las demás */
+
+                players.forEach(otherPlayer => {
+
+                    const otherAudio =
+                        otherPlayer.querySelector(
+                            'audio'
+                        );
+
+                    const otherBtn =
+                        otherPlayer.querySelector(
+                            '.play'
+                        );
+
+
+                    if (
+                        otherAudio !== audio
+                    ) {
+
+                        otherAudio.pause();
+
+                        otherBtn.textContent =
+                            '▶';
+
+                    }
+
+                });
+
+
+                if (isPlaying) {
+
+                    audio.pause();
+
+                    playBtn.textContent =
+                        '▶';
+
+                    isPlaying = false;
+
+                } else {
+
+                    audio.play();
+
+                    playBtn.textContent =
+                        '⏸';
+
+                    isPlaying = true;
+
+                }
+
+            }
+        );
+
+
+        audio.addEventListener(
+            'play',
+            () => {
+
+                /* Si otra canción empieza por cualquier
+                   otro método, también se detienen */
+
+                players.forEach(otherPlayer => {
+
+                    const otherAudio =
+                        otherPlayer.querySelector(
+                            'audio'
+                        );
+
+                    const otherBtn =
+                        otherPlayer.querySelector(
+                            '.play'
+                        );
+
+
+                    if (
+                        otherAudio !== audio
+                    ) {
+
+                        otherAudio.pause();
+
+                        otherBtn.textContent =
+                            '▶';
+
+                    }
+
+                });
+
+                isPlaying = true;
+
+                playBtn.textContent =
+                    '⏸';
+
+            }
+        );
+
+
+        audio.addEventListener(
+            'pause',
+            () => {
+
+                isPlaying = false;
+
+                playBtn.textContent =
+                    '▶';
+
+            }
+        );
+
+
+        audio.addEventListener(
+            'ended',
+            () => {
+
+                isPlaying = false;
+
+                playBtn.textContent =
+                    '▶';
+
+                progress.style.width =
+                    '0%';
+
+            }
+        );
+
+
+        audio.addEventListener(
+            'timeupdate',
+            () => {
+
+                const dur =
+                    audio.duration;
+
+                const currentTime =
+                    audio.currentTime;
+
+
+                if (!isNaN(dur)) {
+
+                    const percent =
+                        (currentTime / dur) * 100;
+
+                    progress.style.width =
+                        percent + '%';
+
+                }
+
+
+                current.textContent =
+                    formatTime(
+                        currentTime
+                    );
+
+                duration.textContent =
+                    formatTime(
+                        dur
+                    );
+
+            }
+        );
+
+
+        container.addEventListener(
+            'click',
+            e => {
+
+                if (isNaN(audio.duration))
+                    return;
+
+
+                const width =
+                    container.clientWidth;
+
+                const clickX =
+                    e.offsetX;
+
+
+                audio.currentTime =
+                    (clickX / width) *
+                    audio.duration;
+
+            }
+        );
+
+
+        function formatTime(time) {
+
+            if (isNaN(time))
+                return "0:00";
+
+
+            const m =
+                Math.floor(
+                    time / 60
+                );
+
+
+            const s =
+                Math.floor(
+                    time % 60
+                )
+                .toString()
+                .padStart(2, '0');
+
+
+            return `${m}:${s}`;
+
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
